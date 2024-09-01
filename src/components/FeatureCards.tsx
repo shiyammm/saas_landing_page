@@ -14,6 +14,7 @@ const FeatureCards = ({
   const offSetY = useMotionValue(-100);
   const maskImage = useMotionTemplate`radial-gradient(100px 100px at ${offSetX}px ${offSetY}px, black, transparent)`;
   const borderRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     const handleMousePosition = (event: MouseEvent) => {
       if (!borderRef.current) return;
@@ -26,7 +27,7 @@ const FeatureCards = ({
     return () => {
       window.removeEventListener('mousemove', handleMousePosition);
     };
-  }, []);
+  }, [offSetX, offSetY]);
 
   return (
     <div className=" border border-white p-10 text-center rounded-xl border-opacity-35 space-y-3  flex flex-col items-center flex-1 relative">

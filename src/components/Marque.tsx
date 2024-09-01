@@ -22,7 +22,7 @@ const Marque = () => {
   return (
     <section className="bg-black py-20 sm:py-32 space-y-10">
       <h2 className="text-center text-lg sm:text-xl text-opacity-80 text-white px-4">
-        Trusted by the world's most innovative teams
+        Trusted by the world&apos;s most innovative teams
       </h2>
       <div className="before:content-[''] relative overflow-hidden before:h-full after:h-full after:content-[''] before:z-10 before:absolute after:absolute before:bg-[linear-gradient(to_right,#000,rgb(0,0,0,0))] after:bg-[linear-gradient(to_left,#000,rgb(0,0,0,0))] before:w-20 after:w-20 after:right-0 before:left-0 before:top-0 after:top-0">
         <motion.div
